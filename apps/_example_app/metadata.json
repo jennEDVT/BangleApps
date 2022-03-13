@@ -1,6 +1,6 @@
 { "id": "7chname",
   "name": "Jenn's new counter clocker",
-  "shortName":"Jenn Clock",
+  "shortName":"JennClock",
   "version":"1",
   "description": "My bangle.js 2 counter clock.",
   "icon": "app.png",
