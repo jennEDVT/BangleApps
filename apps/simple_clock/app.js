@@ -1,11 +1,12 @@
-  var Layout = require("Layout");
+var Layout = require("Layout");
 var count = 0;
 
 var layout = new Layout( {
   type:"v", c: [
     {type:"txt", font:"25%", label:"12:00", id:"time" },
     {type:"txt", font:"9%", label:"The Date", id:"date" },
-    {type:"txt", font:"10%", label:count , id:"btnResponse" }
+    {type:"undefined", font:"12%", label:"The Date", id:"padding1" },
+    {type:"txt", font:"8%", label:count , id:"btnResponse" }
   ]
 }, {btns:[
   {label:"c", cb: l=>setLabel(),  cbl: l=>Bangle.showLauncher()},  
