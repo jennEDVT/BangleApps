@@ -1,7 +1,7 @@
 { "id": "simple_clock",
   "name": "Simple Analog Clock UDATED BY JENN!!!!",
   "shortName":"Simple Clock jenn",
-  "version":"2",
+  "version":"2.1",
   "description": "a simple, yet stylish, analog clock UPDATED BY JENN",
   "icon": "app-icon.png",
   "type": "clock",
