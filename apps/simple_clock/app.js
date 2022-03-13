@@ -5,7 +5,7 @@ var layout = new Layout( {
   type:"v", c: [
     {type:"txt", font:"25%", label:"12:00", id:"time" },
     {type:"txt", font:"9%", label:"The Date", id:"date" },
-    {type:"undefined", font:"12%", label:"The Date", id:"padding1" },
+    {type:"txt", font:"12%", label:"", id:"padding1" },
     {type:"txt", font:"8%", label:count , id:"btnResponse" }
   ]
 }, {btns:[
