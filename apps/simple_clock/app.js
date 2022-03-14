@@ -4,7 +4,8 @@ var count = 0;
 var layout = new Layout( {
   type:"v", c: [
     {type:"txt", font:"10%", label:"", id:"padding1" },
-    {type:"txt", font:"25%", label:"12:00", id:"time" },
+    {type:"txt", font:"10%", label:"", id:"padding1a" },
+    {type:"txt", font:"20%", label:"12:00", id:"time" },
     {type:"txt", font:"9%", label:"The Date", id:"date" },
     {type:"txt", font:"10%", label:"", id:"padding2" },
     {type:"txt", font:"8%", label:count , id:"btnResponse" },
@@ -54,8 +55,5 @@ g.clear();
 draw();
 Bangle.loadWidgets();
 Bangle.drawWidgets();
-
-
-
 
 
