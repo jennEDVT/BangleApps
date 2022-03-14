@@ -7,7 +7,12 @@ var layout = new Layout( {
     {type:"txt", font:"25%", label:"12:00", id:"time" },
     {type:"txt", font:"9%", label:"The Date", id:"date" },
     {type:"txt", font:"10%", label:"", id:"padding2" },
-    {type:"txt", font:"8%", label:count , id:"btnResponse" }
+    {type:"txt", font:"8%", label:count , id:"btnResponse" },
+    
+        {type:"txt", font:"6x8:2", label:"", id:"padding3" },
+
+    
+     {type:"btn", font:"6x8:2", label:"Settings", cb: l=>openSettings() },
   ]
 }, {btns:[
   {label:"", cb: l=>setLabel(),  cbl: l=>Bangle.showLauncher()},  
@@ -39,10 +44,18 @@ function setLabel() {
   layout.render();
 }
 
+function openSettings() {
+  Bangle.buzz(100,0.2);
+  Bangle.showLauncher();
+}
+
 // update time and draw
 g.clear();
 draw();
 Bangle.loadWidgets();
 Bangle.drawWidgets();
+
+
+
 
 
