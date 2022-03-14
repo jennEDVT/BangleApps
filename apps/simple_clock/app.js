@@ -3,13 +3,14 @@ var count = 0;
 
 var layout = new Layout( {
   type:"v", c: [
+    {type:"txt", font:"10%", label:"", id:"padding1" },
     {type:"txt", font:"25%", label:"12:00", id:"time" },
     {type:"txt", font:"9%", label:"The Date", id:"date" },
-    {type:"txt", font:"12%", label:"", id:"padding1" },
+    {type:"txt", font:"10%", label:"", id:"padding2" },
     {type:"txt", font:"8%", label:count , id:"btnResponse" }
   ]
 }, {btns:[
-  {label:"c", cb: l=>setLabel(),  cbl: l=>Bangle.showLauncher()},  
+  {label:"", cb: l=>setLabel(),  cbl: l=>Bangle.showLauncher()},  
 ], lazy:true});
 
 // timeout used to update every minute
@@ -32,7 +33,7 @@ function draw() {
 
 
 function setLabel() {
-  Bangle.buzz(300,0.8);
+  Bangle.buzz(100,0.2);
   count = count + 1;
   layout.btnResponse.label = count;
   layout.render();
@@ -41,6 +42,7 @@ function setLabel() {
 // update time and draw
 g.clear();
 draw();
-
+Bangle.loadWidgets();
+Bangle.drawWidgets();
 
 
