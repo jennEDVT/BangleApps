@@ -47,16 +47,16 @@ function setLabel() {
   Bangle.buzz(100,0.2);
   count = count + 1;
   layout.btnResponse.label = count;
-  layout.clear(layout.btnResponse.label);
-  layout.render(layout.btnResponse.label);
+  layout.clear(layout.btnResponse);
+  layout.render();
 }
 
 function setLabel2() {
   Bangle.buzz(100,0.2);
   count2 = count2 + 1;
   layout.btn2Response.label = count2;
-  layout.clear(layout.btn2Response.label);
-  layout.render(layout.btn2Response.label);
+  layout.clear(layout.btn2Response);
+  layout.render();
 }
 
 function openSettings() {
