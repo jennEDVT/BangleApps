@@ -47,6 +47,7 @@ function setLabel() {
   Bangle.buzz(100,0.2);
   count = count + 1;
   layout.btnResponse.label = count;
+  g.clear();
   layout.render();
 }
 
@@ -54,6 +55,7 @@ function setLabel2() {
   Bangle.buzz(100,0.2);
   count2 = count2 + 1;
   layout.btn2Response.label = count2;
+  g.clear();
   layout.render();
 }
 
